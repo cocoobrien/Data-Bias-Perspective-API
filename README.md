@@ -7,6 +7,13 @@ Given that English is the most popular language in the world and spoken by 1.5 b
 
 LICENSE: This project is licensed under the terms of the MIT license.
 
+CSV File/Dataset Attributes:
+
+English Comment - Comment text for analysis in English
+Italian Comment - Italian translation of English comment for analysis
+English Score - Perspective API 'toxicity score' for the English translation produced by AnalyzeComment function
+Italian Score - Perspective API 'toxicity score' for the Italian translation produced by AnalyzeComment function
+
 Results:
 
 I was correct in my hypotheses that Perspective API would not produce consistent scores when analyzing the same comment text, but in different languages. There are reportedly 7,106 living languages in the world. While it is an admirable goal to strive to be as inclusive as possible with this API, a good place to start in terms of training it with different foreign languages is shifting focus to the top 5 or perhaps top 10 spoken around the world. As a result,  Perspective API would not only produce scores with greater accuracy, but this would also allow it to become far more globally accessible, useful, and impactful to monitoring the prevalence of toxicity online.  
