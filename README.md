@@ -1,21 +1,21 @@
 # Data-Bias-Perspective-API
-Explores the concept of bias through querying an existing natural language processing model — specifically, the Perspective API released by Google Jigsaw. Evaluates Perspective API's accuracy and consistency when evaluating the same text or message translated in different languages to produce a toxicity scores. 
+This study delves into the concept of bias by interrogating the Perspective API, specifically Google Jigsaw's offering. The examination revolves around assessing the accuracy and consistency of the Perspective API when evaluating identical text or messages translated into distinct languages, aiming to generate toxicity scores.
 
-I hypothesized that the Italian comments would score lower than the English comments, even though they have been directly translated into one another with no context altered. To do so, I pulled sample comments from the initial dataset and created some of my own to build a diverse sample. This sample included 25 English comments, with their complementary Italian-translation in another feature column.
+My hypothesis posited that Italian comments would yield lower scores than their English counterparts, even when directly translated without altering context. To test this, I curated a sample from the initial dataset, comprising 25 English comments paired with their corresponding Italian translations in a separate feature column.
 
-Given that English is the most popular language in the world and spoken by 1.5 billion people worldwide, I assumed that these comments have not only had greater testing and analysis, but are consequently likely to be graded more harshly than those in a different language. This would prove to be a weakness for the API as harmful, offensive, abusive, or dangerous comments could be posted to the internet undetected. If my hypothesis proves to be true, I would recommend Google Jigsaw and all those using the API to invest more time into strengthening the NLP’s accuracy across foreign languages.
+The rationale behind this exploration stems from the prominence of English, spoken by 1.5 billion people globally. I presumed that English comments, being more widely tested and analyzed, might receive harsher evaluations. This potential bias could lead to undetected harmful or offensive content online, exposing a vulnerability in the API. If proven true, my recommendation is for Google Jigsaw and users of the API to dedicate efforts to enhance the NLP's accuracy across various languages.
 
 LICENSE: This project is licensed under the terms of the MIT license.
 
 CSV File/Dataset Attributes:
 
-English Comment - Comment text for analysis in English
-Italian Comment - Italian translation of English comment for analysis
-English Score - Perspective API 'toxicity score' for the English translation produced by AnalyzeComment function
-Italian Score - Perspective API 'toxicity score' for the Italian translation produced by AnalyzeComment function
+- English Comment: Text for analysis in English
+- Italian Comment: Italian translation of the English comment for analysis
+- English Score: Perspective API 'toxicity score' for the English translation produced by the AnalyzeComment function
+- Italian Score: Perspective API 'toxicity score' for the Italian translation produced by the AnalyzeComment function
 
 Results:
 
-I was correct in my hypotheses that Perspective API would not produce consistent scores when analyzing the same comment text, but in different languages. There are reportedly 7,106 living languages in the world. While it is an admirable goal to strive to be as inclusive as possible with this API, a good place to start in terms of training it with different foreign languages is shifting focus to the top 5 or perhaps top 10 spoken around the world. As a result,  Perspective API would not only produce scores with greater accuracy, but this would also allow it to become far more globally accessible, useful, and impactful to monitoring the prevalence of toxicity online.  
+The findings validate my hypothesis that the Perspective API exhibits inconsistency in scoring when analyzing identical text in different languages. Acknowledging the existence of 7,106 living languages worldwide, while inclusivity is commendable, a strategic approach could involve prioritizing the top 5 or 10 most spoken languages for training. This targeted focus would likely result in more accurate scores and enhance the API's global accessibility, utility, and impact in monitoring online toxicity.
 
-While these results do show a significant difference in scoring different languages, I recognize that when translating text into another language, there are often differences in cultural context, meaning, syntax and, grammar.
+It's crucial to note that these results showcase significant differences in scoring across languages, recognizing the inherent challenges in translating text, including disparities in cultural context, meaning, syntax, and grammar.
