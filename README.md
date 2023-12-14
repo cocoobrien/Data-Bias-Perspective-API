@@ -7,12 +7,12 @@ The rationale behind this exploration stems from the prominence of English, spok
 
 LICENSE: This project is licensed under the terms of the MIT license.
 
-CSV File/Dataset Attributes:
-
-- English Comment: Text for analysis in English
-- Italian Comment: Italian translation of the English comment for analysis
-- English Score: Perspective API 'toxicity score' for the English translation produced by the AnalyzeComment function
-- Italian Score: Perspective API 'toxicity score' for the Italian translation produced by the AnalyzeComment function
+| **CSV File/Dataset Attributes** | **Description** |
+| ------------------------------- | --------------- |
+| English Comment                 | Text for analysis in English |
+| Italian Comment                 | Italian translation of the English comment for analysis |
+| English Score                   | Perspective API 'toxicity score' for the English translation produced by the AnalyzeComment function |
+| Italian Score                   | Perspective API 'toxicity score' for the Italian translation produced by the AnalyzeComment function |
 
 Results:
 
